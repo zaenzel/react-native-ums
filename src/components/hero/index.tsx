@@ -1,7 +1,7 @@
-import { ImageBackground, StyleSheet, Text, View } from 'react-native'
+import { ImageBackground, ScrollView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-function BoldText({ children, style } : { children: string, style?: any }) {
+function BoldText({ children, style }: { children: string, style?: any }) {
     return <Text style={[styles.boldText, style]}>{children}</Text>
 }
 
@@ -11,14 +11,14 @@ const index = () => {
             source={require('../../assets/images/hero.png')}
             style={styles.container}>
             <View>
-                <View style={{ backgroundColor: "yellow", height: 2 }} />
+                <View style={{ backgroundColor: "#fcba03", height: 2 }} />
                 <View style={styles.labelText}>
                     <Text style={{ color: "#ffcc00", }}>Towards</Text>
                     <Text style={{ color: "#2b05b5", fontWeight: "bold" }}>world class {'\n'} university</Text>
                 </View>
             </View>
             <View style={styles.textHero}>
-                <BoldText style={{fontSize: 20}}>Gapai Mimpimu Bersama UMS</BoldText>
+                <BoldText style={{ fontSize: 20 }}>Gapai Mimpimu Bersama UMS</BoldText>
                 <Text style={{ color: "white", lineHeight: 20 }}>
                     Dengan <BoldText>65 Program Studi </BoldText>
                     dapat menyerap minat dan bakat calon peserta didik baru.
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
     },
     boldText: {
-        fontWeight: "bold", 
+        fontWeight: "bold",
         color: "white"
     },
     labelText: {
@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
         padding: 20,
     },
     button: {
-        backgroundColor: "yellow",
+        backgroundColor: "#edca00",
         paddingHorizontal: 20,
         paddingVertical: 10,
         borderRadius: 5
